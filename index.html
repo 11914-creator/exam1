@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <meta name="description" content="แฟ้มสะสมผลงานแนะนำตัวของนางสาวรัตติกาล ชัยภูมิ เพื่อศึกษาต่อคณะครุศาสตร์ สาขาวิชาเอกสังคมศึกษา">
+  <title>แฟ้มสะสมผลงาน | รัตติกาล ชัยภูมิ</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f5ee;
+      --green: #355943;
+      --green-dark: #233f32;
+      --green-soft: #e6ebe2;
+      --brown: #906f50;
+      --ink: #26352c;
+      --muted: #788078;
+      --line: #e5e4d9;
+      --white: #fffefa;
+      --serif: "DM Serif Display", Georgia, serif;
+      --sans: "Anuphan", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; }
+
+    .page-shell {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 82px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--green-dark);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border: 1px solid #cbd4c8;
+      border-radius: 50%;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 17px;
+    }
+
+    .topbar-note {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .08em;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 56px;
+      min-height: 490px;
+      padding: 70px 0 74px;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      top: 18px;
+      right: -80px;
+      width: 390px;
+      height: 390px;
+      border: 1px solid #e6e5d9;
+      border-radius: 50%;
+      content: "";
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 22px;
+      color: var(--brown);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .15em;
+    }
+
+    .eyebrow::before {
+      width: 28px;
+      height: 1px;
+      background: var(--brown);
+      content: "";
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--green-dark);
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 500;
+      letter-spacing: -.035em;
+      line-height: 1.25;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--brown);
+      font-family: var(--serif);
+      font-size: .79em;
+      font-weight: 400;
+      letter-spacing: .005em;
+    }
+
+    .hero-copy {
+      max-width: 470px;
+      margin: 22px 0 0;
+      color: #70776f;
+      font-size: 15px;
+    }
+
+    .study-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      max-width: 420px;
+      margin-top: 31px;
+      padding: 18px 20px;
+      border: 1px solid #e2e4d9;
+      border-radius: 5px;
+      background: rgba(255, 254, 250, .72);
+    }
+
+    .study-icon {
+      display: grid;
+      flex: 0 0 38px;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .study-icon svg { width: 19px; height: 19px; }
+
+    .study-label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .08em;
+    }
+
+    .study-name {
+      color: var(--green-dark);
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    .hero-visual {
+      position: relative;
+      justify-self: center;
+      width: min(100%, 340px);
+      padding: 12px;
+      border: 1px solid #dddccf;
+      background: var(--white);
+      transform: rotate(2deg);
+    }
+
+    .hero-visual img {
+      display: block;
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+
+    .photo-caption {
+      padding: 11px 6px 2px;
+      color: var(--muted);
+      font-size: 11px;
+      text-align: center;
+      letter-spacing: .03em;
+    }
+
+    .section {
+      padding: 63px 0 69px;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 27px;
+    }
+
+    .section-kicker {
+      margin: 0 0 5px;
+      color: var(--brown);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--green-dark);
+      font-size: 27px;
+      font-weight: 500;
+      letter-spacing: -.02em;
+    }
+
+    .section-description {
+      margin: 0 0 3px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .photo-card {
+      min-width: 0;
+      margin: 0;
+      padding: 7px;
+      border: 1px solid #e4e3d8;
+      background: var(--white);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 9px 22px rgba(48, 62, 49, .08);
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1.08;
+      background: var(--green-soft);
+      object-fit: cover;
+    }
+
+    .photo-card figcaption {
+      overflow: hidden;
+      padding: 9px 3px 4px;
+      color: #687168;
+      font-size: 11px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .likes-section {
+      padding-top: 57px;
+      background: #e9ebe2;
+    }
+
+    .likes-section .photo-card {
+      border-color: #e0e1d6;
+    }
+
+    .likes-section .photo-card img {
+      aspect-ratio: 1 / .86;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 23px 0 28px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-mark {
+      color: var(--brown);
+      font-family: var(--serif);
+      font-size: 15px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr .8fr;
+        gap: 25px;
+        min-height: 420px;
+        padding: 55px 0;
+      }
+
+      .hero-visual img { height: 280px; }
+      .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+      .photo-card img { aspect-ratio: 1 / .95; }
+      .section { padding: 48px 0 54px; }
+    }
+
+    @media (max-width: 540px) {
+      .page-shell { width: min(100% - 32px, 440px); }
+      .topbar { min-height: 68px; }
+      .topbar-note { font-size: 10px; }
+      .hero { grid-template-columns: 1fr; gap: 31px; padding: 49px 0 45px; }
+      .hero::after { top: 210px; right: -220px; width: 330px; height: 330px; }
+      .hero-copy { margin-top: 15px; }
+      .study-card { margin-top: 22px; }
+      .hero-visual { width: min(76%, 290px); }
+      .hero-visual img { height: 265px; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: 5px; margin-bottom: 20px; }
+      h2 { font-size: 24px; }
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+      .photo-card img { aspect-ratio: 1 / 1.05; }
+      .likes-section .photo-card img { aspect-ratio: 1 / .9; }
+      .footer { align-items: flex-start; flex-direction: column; gap: 5px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-shell topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>PORTFOLIO</span>
+    </div>
+    <span class="topbar-note">แฟ้มสะสมผลงานเพื่อศึกษาต่อ</span>
+  </header>
+
+  <main>
+    <section class="page-shell hero" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">ABOUT ME</p>
+        <h1 id="intro-title">นางสาวรัตติกาล ชัยภูมิ <span>Rattikarn Chaiyaphum</span></h1>
+        <p class="hero-copy">แฟ้มแนะนำตัวเพื่อประกอบการศึกษาต่อ บันทึกเรื่องราว ความสนใจ และความตั้งใจที่จะเรียนรู้และเติบโตไปพร้อมกับผู้อื่น</p>
+        <div class="study-card">
+          <span class="study-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 5.5c3.4-.8 6.4-.2 9 1.8v12c-2.6-2-5.6-2.6-9-1.8z"/>
+              <path d="M21 5.5c-3.4-.8-6.4-.2-9 1.8v12c2.6-2 5.6-2.6 9-1.8z"/>
+            </svg>
+          </span>
+          <span>
+            <span class="study-label">คณะที่สนใจศึกษาต่อ</span>
+            <span class="study-name">คณะครุศาสตร์<br>สาขาวิชาเอกสังคมศึกษา</span>
+          </span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://drive.google.com/thumbnail?id=1lJijKZwwCXLkDSMvnChR6ha8FWGieluu&amp;sz=w1000" alt="รูปถ่ายของนางสาวรัตติกาล ชัยภูมิ">
+        <div class="photo-caption">นางสาวรัตติกาล ชัยภูมิ</div>
+      </div>
+    </section>
+
+    <section class="page-shell section" aria-labelledby="my-photos-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">01 / MY PORTRAITS</p>
+          <h2 id="my-photos-title">ภาพแนะนำตัว</h2>
+        </div>
+        <p class="section-description">ภาพตัวอย่าง — เปลี่ยนเป็นรูปถ่ายของฉันทั้ง 5 ภาพ</p>
+      </div>
+      <div class="gallery">
+        <figure class="photo-card">
+          <img src="https://drive.google.com/thumbnail?id=1Ek4WIHmNs2q16pt7YhNLVFYXAz1e6jt8&amp;sz=w700" alt="ภาพแนะนำตัวของนางสาวรัตติกาล ชัยภูมิ ภาพที่ 1" loading="lazy">
+          <figcaption>ภาพแนะนำตัว 01</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="https://drive.google.com/thumbnail?id=1wvs2AkoqaoVF7cZ3-fnHTW5Fp04sp_T8&amp;sz=w700" alt="ภาพแนะนำตัวของนางสาวรัตติกาล ชัยภูมิ ภาพที่ 2" loading="lazy">
+          <figcaption>ภาพแนะนำตัว 02</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="https://drive.google.com/thumbnail?id=1MND5SQdsa3ekkugHQf1LXViio4rZGZBd&amp;sz=w700" alt="ภาพแนะนำตัวของนางสาวรัตติกาล ชัยภูมิ ภาพที่ 3" loading="lazy">
+          <figcaption>ภาพแนะนำตัว 03</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="https://drive.google.com/thumbnail?id=1-0Hhqmtl_CHJC3wsC7YVOSXO7ht-15Ks&amp;sz=w700" alt="ภาพแนะนำตัวของนางสาวรัตติกาล ชัยภูมิ ภาพที่ 4" loading="lazy">
+          <figcaption>ภาพแนะนำตัว 04</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="https://drive.google.com/thumbnail?id=1aLnoaZim13h6r-MEdihSkf3CQIObH6IX&amp;sz=w700" alt="ภาพแนะนำตัวของนางสาวรัตติกาล ชัยภูมิ ภาพที่ 5" loading="lazy">
+          <figcaption>ภาพแนะนำตัว 05</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="likes-section">
+      <div class="page-shell section" aria-labelledby="likes-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">02 / THINGS I LOVE</p>
+            <h2 id="likes-title">สิ่งที่ชอบ</h2>
+          </div>
+          <p class="section-description">เรื่องเล็ก ๆ ที่เติมแรงบันดาลใจในทุกวัน</p>
+        </div>
+        <div class="gallery">
+          <figure class="photo-card">
+            <img src="https://inwfile.com/s-fi/nt1djh.jpg" alt="ภาพสิ่งที่ชอบ รูปที่ 1" loading="lazy">
+            <figcaption>วิชาสังคมศึกษา</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0eRkK7ZROun3XpjJKAuGX-4oOh9rH4GocwB6v7ctRyg&amp;s=10" alt="ภาพสิ่งที่ชอบ รูปที่ 2" loading="lazy">
+            <figcaption>แมว</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://f.ptcdn.info/953/030/000/1430584086-hellokitty-o.jpg" alt="ภาพสิ่งที่ชอบ รูปที่ 3" loading="lazy">
+            <figcaption>การ์ตูนคิตตี้</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVTeCtbafXrUuR1fadAX5ift0IUYhpfKQUqMl-RHLpmw&amp;s=10" alt="ภาพสิ่งที่ชอบ รูปที่ 4" loading="lazy">
+            <figcaption>น้ำตกหรือธรรมชาติ</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZCRQ-r4jBu69lxMvt3bOoJrC5ICeA-Wc1iN2VJk3SvU-5ncUD6VpPLk1&amp;s=10" alt="ภาพสิ่งที่ชอบ รูปที่ 5" loading="lazy">
+            <figcaption>เก็บตราปั้มอุทยานแห่งชาติ</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-shell footer">
+    <span>นางสาวรัตติกาล ชัยภูมิ · แฟ้มสะสมผลงานเพื่อศึกษาต่อ</span>
+    <span class="footer-mark">ด้วยความตั้งใจและความฝัน</span>
+  </footer>
+</body>
+</html>
